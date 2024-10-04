@@ -1,0 +1,231 @@
+<section class="scroll-mt-24" id="faq">
+  <div class="px-8 md:px-12 py-12 max-w-2xl mx-auto">
+    <div class="">
+      <h2 class="text-3xl tracking-tighter font-light lg:text-4xl text-black">
+        The answers to the most <span class="block"
+          >popular frequent questions
+        </span>
+      </h2>
+      <p class="mt-5 text-black">
+        Can't find your answer? Send an <a
+          class="text-blue-400 hover:text-black duration-200"
+          href="mailto:s5sajidyt@gmail.com">email</a
+        > or message me on instagram and I will get back to you .
+      </p>
+
+    </div>
+    <div x-data="{selected:null}">
+      <ul
+        class="list-none text-black bg-white rounded-3xl divide-y divide-zinc-200 mt-8"
+        role="list"
+        @click="open = !open"
+      >
+        <li class="relative">
+          <button
+            class="w-full p-4 text-left"
+            @click="selected !== 1 ? selected = 1 : selected = null"
+            type="button"
+          >
+            <div class="items-center flex justify-between text-black">
+              <p class="text-lg tracking-tight text-black">
+                Who is even S5SAJID?
+              </p>
+              <svg
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                ><path
+                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"></path></svg
+              >
+            </div></button
+          ><div
+            class="relative overflow-hidden duration-700 max-h-0 transition-all"
+            style=""
+            x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
+            x-ref="container1"
+          >
+            <div class="text-sm text-zinc-500 p-8 pt-0">
+              <p>
+                Sajid Ullah, also known as S5SAJID, is a Web & Mobile Developer with over 3 years of experience.
+              </p>
+              <br>
+              <p>
+                He specializes in front-end development using React JS, Next.js, and JavaScript, while also handling full-stack projects with seamless back-end integration.
+              </p>
+            </div>
+          </div>
+        </li><li class="relative">
+          <button
+            class="w-full p-4 text-left"
+            @click="selected !== 2 ? selected = 2 : selected = null"
+            type="button"
+            ><div class="items-center flex justify-between text-black">
+              <p class="text-lg tracking-tight text-black">
+                Are you available for freelance work?
+              </p><svg
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                ><path
+                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"></path></svg
+              >
+            </div></button
+          ><div
+            class="relative overflow-hidden duration-700 max-h-0 transition-all"
+            style=""
+            x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+            x-ref="container2"
+          >
+            <div class="text-sm text-zinc-500 p-8 pt-0">
+              Yes, I’m open to freelance opportunities. Feel free to reach out and discuss your requirements.
+            </div>
+          </div>
+        </li><li class="relative">
+          <button
+            class="w-full p-4 text-left"
+            @click="selected !== 3 ? selected = 3 : selected = null"
+            type="button"
+            ><div class="items-center flex justify-between text-black">
+              <p class="text-lg tracking-tight text-black">
+                How quickly will I get some work done?
+              </p><svg
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                ><path
+                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"></path></svg
+              >
+            </div></button
+          ><div
+            class="relative overflow-hidden duration-700 max-h-0 transition-all"
+            style=""
+            x-bind:style="selected == 3 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+            x-ref="container2"
+          >
+            <div class="text-sm text-zinc-500 p-8 pt-0">
+              Expect the initial concept within 2-3 days, and minimal will make
+              revisions until it meets your complete satisfaction. For bigger
+              projects it can take up to 4 weeks.
+            </div>
+          </div>
+        </li><li class="relative">
+          <button
+            class="w-full p-4 text-left"
+            @click="selected !== 4 ? selected = 4 : selected = null"
+            type="button"
+            ><div class="items-center flex justify-between text-black">
+              <p class="text-lg tracking-tight text-black">
+                How do you ensure the quality of your work?
+              </p><svg
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                ><path
+                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"></path></svg
+              >
+            </div></button
+          ><div
+            class="relative overflow-hidden duration-700 max-h-0 transition-all"
+            style=""
+            x-bind:style="selected == 4 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+            x-ref="container2"
+          >
+            <div class="text-sm text-zinc-500 p-8 pt-0">
+              I follow best practices in coding and testing to ensure high-quality results. 
+              I keep my code organized, reusable, and documented, 
+              and I test extensively to catch any issues before launch. 
+              I’m committed to delivering work that’s both functional 
+              and reliable.
+            </div>
+          </div>
+        </li>
+        <li class="relative">
+          <button
+            class="w-full p-4 text-left"
+            @click="selected !== 5 ? selected = 5 : selected = null"
+            type="button"
+            ><div class="items-center flex justify-between text-black">
+              <p class="text-lg tracking-tight text-black">
+                What platforms do you build for?
+              </p><svg
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                ><path
+                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"></path></svg
+              >
+            </div></button
+          ><div
+            class="relative overflow-hidden duration-700 max-h-0 transition-all"
+            style=""
+            x-bind:style="selected == 5 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+            x-ref="container2"
+          >
+            <div class="text-sm text-zinc-500 p-8 pt-0">
+              I build responsive web applications for desktops,
+               tablets, and mobile browsers. For mobile apps, 
+               I use Flutter to create cross-platform apps 
+               that work on both iOS and Android.
+            </div>
+          </div>
+        </li>
+
+        <li class="relative">
+          <button
+            class="w-full p-4 text-left"
+            @click="selected !== 7 ? selected = 7 : selected = null"
+            type="button"
+            ><div class="items-center flex justify-between text-black">
+              <p class="text-lg tracking-tight text-black">
+                How can I contact you to discuss my project?
+              </p><svg
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                ><path
+                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"></path></svg
+              >
+            </div></button
+          ><div
+            class="relative overflow-hidden duration-700 max-h-0 transition-all"
+            style=""
+            x-bind:style="selected == 7 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+            x-ref="container2"
+          >
+            <div class="text-sm text-zinc-500 p-8 pt-0">
+              You can reach out to me via email at 
+              s5sajidyt@gmail.com or connect with me on 
+              Instagram at @s5sajid. I’m happy to answer any 
+              questions you have and explore how I can assist
+               with your project.
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
