@@ -1,0 +1,38 @@
+---
+let blogs = [
+  {
+    title: "Modern Technology VS Developers.",
+    desc: "In these modern days developers passed by it assuming it was random trash ensuring that the case would never be solved.",
+  },
+  {
+    title: "Creating the most effecient website.",
+    desc: "Most of the sites needs to be like reach her knee while the other barely touched her ankle. Every other part of her was perfect, but never the socks. They were her micro act of rebellion.",
+  },
+];
+---
+
+<section class="scroll-mt-24 mb-4" id="blogs">
+  <div class="px-8 md:px-12 py-12 max-w-2xl mx-auto">
+    <div
+      class="col-span-full mb-8 lg:col-span-2 w-full rounded-4xl h-full items-center inline-flex text-black"
+    >
+      <h2 class="text-3xl tracking-tighter font-light">Blogs.</h2>
+    </div>
+
+    {
+      blogs.map((blog) => (
+        <div class="p-8 bg-white rounded-3xl gap-1 mt-1">
+          <h4 class="text-xl text-black hover:opacity-75">
+            <a href="#">{blog.title}</a>
+          </h4>
+          <div class="divide-y divide-white/10 mt-2" />
+          <p class="text-zinc-500 text-sm flex items-center">
+            {blog.desc.length > 120
+              ? blog.desc.slice(0, 120) + "..."
+              : blog.desc}
+          </p>
+        </div>
+      ))
+    }
+  </div>
+</section>
