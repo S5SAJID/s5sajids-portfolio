@@ -1,0 +1,24 @@
+
+> @windbasics/starter@0.0.1 dev
+> astro dev
+
+▶ Astro collects anonymous usage data.
+  This information helps us improve Astro.
+  Run "astro telemetry disable" to opt-out.
+  https://astro.build/telemetry
+
+06:58:02 [types] Generated 1ms
+
+ astro  v4.16.19 ready in 339 ms
+
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+
+06:58:02 watching for file changes...
+
+ update  ▶ New version of Astro available: 5.16.6
+  Run npx @astrojs/upgrade to update
+
+06:58:07 [200] / 24ms
+06:58:07 [404] /tonylea.jpg 2ms
+06:58:07 [404] /volkan.jpg 1ms
