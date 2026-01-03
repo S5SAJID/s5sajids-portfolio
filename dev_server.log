@@ -22,3 +22,5 @@
 06:58:07 [200] / 24ms
 06:58:07 [404] /tonylea.jpg 2ms
 06:58:07 [404] /volkan.jpg 1ms
+07:01:20 [watch] src/layouts/BaseLayout.astro
+07:01:58 [200] / 78ms
